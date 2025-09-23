@@ -277,14 +277,11 @@ public class LearningScriptsForUnity : MonoBehaviour
 
 
 
-        int listLength = PlayerFollowers.Count;
-        for (int i = 0; i < listLength; i++)
+      
+        foreach (var partyMember in PlayerFollowers) 
         {
-            Debug.LogFormat("Index: {0} - {1}", i, PlayerFollowers[i]);
-            if (PlayerFollowers[i] == "Rayman")
-            {
-                Debug.Log("Glad your here Rayman!");
-            }
+            Debug.LogFormat("{0} - Here!", partyMember);
+          
         }
     }
 }

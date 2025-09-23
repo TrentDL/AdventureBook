@@ -327,7 +327,16 @@ MonoBehaviour:
   Pi: 3.14
   CanRun: 1
   MaximumPlayerHealth: 100
+  CurrentGold: 32
+  HasDungeonKey: 0
+  WeaponType: R orb
+  WeaponEquipped: 1
   TheseCanOnlyHoldTheirAssignedType: mono
+  PureOfHeart: 1
+  HasSecretKnowledge: 0
+  RareItem: magic marker
+  CharacterAction: heal
+  Dice: 12
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

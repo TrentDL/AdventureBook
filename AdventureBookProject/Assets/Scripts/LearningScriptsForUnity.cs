@@ -1,3 +1,4 @@
+using JetBrains.Annotations;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
@@ -46,8 +47,8 @@ public class LearningScriptsForUnity : MonoBehaviour
     {
         {"Potion",1 },{"StringItem2",7 },{"StringItem3",8 }
     };
-
-
+    // -- while loops ch. 4 ---
+    public int PlayerHearts = 3;
 
 
     void Start()
@@ -96,20 +97,17 @@ public class LearningScriptsForUnity : MonoBehaviour
         Debug.LogFormat("Items: {0}", ItemInventory.Count); //same deal as note 1, for this
 
 
-
+        foreach (KeyValuePair<string, int> kvp in ItemInventory)
+        {
+            Debug.LogFormat("Item: {0} - {1}RopsaCoin", kvp.Key, kvp.Value);
+        }
 
 
 
 
         FindPartyMember();
 
- 
-
-
-
-
-
-
+        HealthStatus();
     }
 
     // Update is called once per frame
@@ -283,7 +281,21 @@ public class LearningScriptsForUnity : MonoBehaviour
             Debug.LogFormat("{0} - Here!", partyMember);
           
         }
+
+
+       
     }
+
+    public void HealthStatus()
+    {
+        while (PlayerHearts > 0)
+        {
+            Debug.Log("Still Alive!");
+            PlayerHearts--; // whats this for again?
+        }
+        Debug.Log("Player KO'd...");
+    }
+        
 }
 
 

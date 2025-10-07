@@ -50,11 +50,14 @@ public class LearningScriptsForUnity : MonoBehaviour
     // -- while loops ch. 4 ---
     public int PlayerHearts = 3;
 
+   // --------- ch 5 ----------
+    //n/a
+    
+
 
     void Start()
 
     {
-
 
 
 
@@ -108,6 +111,13 @@ public class LearningScriptsForUnity : MonoBehaviour
         FindPartyMember();
 
         HealthStatus();
+
+
+
+        Character hero = new Character(); //ch5 code // object 1 "Since hero and heroine are both separate objects.." or for ex two characters
+        hero.PrintStatsInfo();   
+        Character heroine = new Character("agatha"); //object 2
+        heroine.PrintStatsInfo();
     }
 
     // Update is called once per frame

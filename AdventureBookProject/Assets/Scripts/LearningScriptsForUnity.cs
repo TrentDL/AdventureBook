@@ -32,7 +32,7 @@ public class LearningScriptsForUnity : MonoBehaviour
 
     //---ch. 4 arrays ----
 
-    // array example from book: elementType[] name = new elementType[numberOfElements];
+    // array example from book: elementType[] name = newï¿½elementType[numberOfElements];
 
     //these right brackets are index as well as left?
     int[,,] TopPlayersScores = new int[3, 2, 2];
@@ -51,9 +51,12 @@ public class LearningScriptsForUnity : MonoBehaviour
     public int PlayerHearts = 3;
 
    // --------- ch 5 ----------
-    //n/a
-    
+    public Transform CamTransform; //ch 5 pg 241
 
+    public GameObject DirectionLight;
+    public Transform LightTransform;
+
+    
 
     void Start()
 
@@ -119,9 +122,47 @@ public class LearningScriptsForUnity : MonoBehaviour
         Character heroine = new Character("agatha"); //object 2
         heroine.PrintStatsInfo();
 
-        Weapon huntingBow = new Weapon("Hunting Bow", 105);
+    
+
+
+        Character villian = hero; // a new variable from character class
+        villian.CharacterName = "Sir Kyse";
+
+        
+
+        hero.PrintStatsInfo();
+        villian.PrintStatsInfo();
+     /*    villian.Reset(); //testing ecapsulation ch5 */
+
+        //ch 5 pg 224
+            Weapon huntingBow = new Weapon("Hunting Bow", 105);
+
         huntingBow.PrintWeaponStats();
 
+       Weapon warBow = huntingBow; 
+       warBow.Name = "War Bow"; //use the .Name var from Weapon struct not CharacterName
+       warBow.Damage = 115;  //member 'Damage' variable is from Weapon struct
+     
+        warBow.PrintWeaponStats();
+
+
+
+        Paladin knight = new Paladin("Sir Knight",huntingBow); //ch5 
+        knight.PrintStatsInfo();
+
+
+
+
+
+
+        CamTransform = this.GetComponent<Transform>();   //ch5
+        Debug.Log(CamTransform.localPosition);
+
+
+        /* DirectionLight = GameObject.Find("Directional Light"); */   //look at pg 246 ch5 to see why this is commented out
+
+        LightTransform = DirectionLight.GetComponent<Transform>();
+        Debug.Log(LightTransform.localPosition); //member run game to see changes 
     }
 
     // Update is called once per frame
@@ -309,6 +350,9 @@ public class LearningScriptsForUnity : MonoBehaviour
         }
         Debug.Log("Player KO'd...");
     }
+
+
+    
         
 }
 

@@ -384,6 +384,9 @@ MonoBehaviour:
   CharacterAction: attack
   Dice: 7
   PlayerHearts: 3
+  CamTransform: {fileID: 0}
+  DirectionLight: {fileID: 705507993}
+  LightTransform: {fileID: 0}
 --- !u!114 &963194230
 MonoBehaviour:
   m_ObjectHideFlags: 0

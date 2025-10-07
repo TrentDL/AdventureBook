@@ -6,6 +6,12 @@ using UnityEngine;
 
 public struct MusicPlayer //ch 5 code
 {
+    //I am taking a var from character to here below
+
+
+
+
+/*----------------------------------------------------*/
 
     static string Plum = "red";
 
@@ -14,7 +20,9 @@ public struct MusicPlayer //ch 5 code
     {
 
     }
+    
 
+    //structs contain copies of stuff if you create 
 
 
 

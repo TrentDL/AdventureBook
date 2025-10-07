@@ -118,6 +118,10 @@ public class LearningScriptsForUnity : MonoBehaviour
         hero.PrintStatsInfo();   
         Character heroine = new Character("agatha"); //object 2
         heroine.PrintStatsInfo();
+
+        Weapon huntingBow = new Weapon("Hunting Bow", 105);
+        huntingBow.PrintWeaponStats();
+
     }
 
     // Update is called once per frame

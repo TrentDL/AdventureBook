@@ -19,7 +19,7 @@ public struct Weapon //ch.5
 
     public void PrintWeaponStats() //left off pg220
     {
-
+        Debug.LogFormat("Weapon:{0}-{1}DMG", this.Name,this.Damage);
     }
 
 

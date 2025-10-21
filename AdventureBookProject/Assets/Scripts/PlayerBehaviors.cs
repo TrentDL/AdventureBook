@@ -7,7 +7,12 @@ public class PlayerBehaviors : MonoBehaviour
 {
 
 
-    //1
+    public GameObject Bullet;
+    public float BulletSpeed = 100f;
+
+
+    private bool _isShooting;
+
 
     public float DistanceToGround = 0.1f;
     
@@ -51,6 +56,8 @@ public class PlayerBehaviors : MonoBehaviour
     void Update()
     {
 
+        _isShooting |= Input.GetKeyDown(KeyCode.P);
+
         _isJumping |= Input.GetKeyDown(KeyCode.Space);
         
     _vInput = Input.GetAxis("Vertical")*MoveSpeed;
@@ -93,7 +100,26 @@ public class PlayerBehaviors : MonoBehaviour
             _rb.AddForce(Vector3.up * JumpVelocity,
                 ForceMode.Impulse);
         }
+
+
+        if(_isShooting)
+        {
+            GameObject newBullet = Instantiate(Bullet,
+                this.transform.position + new Vector3(0, 0, 1),
+                this.transform.rotation);
+
+
+            Rigidbody BulletRB = 
+                newBullet.GetComponent<Rigidbody>();
+            BulletRB.linearVelocity = this.transform.forward * BulletSpeed;
+
+        }
+        _isShooting = false;    
+
+
     }
+
+
 
 
     private bool IsGrounded()

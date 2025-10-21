@@ -72,6 +72,7 @@
     <Compile Include="Assets\Scripts\Structs.cs" />
     <Compile Include="Assets\Scripts\Paladin.cs" />
     <Compile Include="Assets\Scripts\CameraBehavior.cs" />
+    <Compile Include="Assets\Scripts\BulletBehaviors.cs" />
     <Compile Include="Assets\Scripts\Weapon.cs" />
     <Compile Include="Assets\Scripts\MadnessGameSelect.cs" />
   </ItemGroup>

@@ -5,25 +5,44 @@ using UnityEngine;
 
 public class PlayerBehaviors : MonoBehaviour
 {
-   
+
 
     //1
+
+    public float DistanceToGround = 0.1f;
+    
+   
+    
+    private CapsuleCollider _col;
+
+   
+
+    public float JumpVelocity = 5f; //ch8 code
+
+    private bool _isJumping;
+
+    
+
     public float MoveSpeed = 10f;
 
     public float RotateSpeed = 75f;
 
-
+    public LayerMask GroundLayer;
 
     private float _vInput;
 
     private float _hInput;
     private Rigidbody _rb;
 
-  //2
+  
     void Start()
     {
-        //3 
+        
         _rb = GetComponent<Rigidbody>();
+
+        //4
+        _col = GetComponent<CapsuleCollider>();
+
     }
   
 
@@ -31,6 +50,8 @@ public class PlayerBehaviors : MonoBehaviour
     //4
     void Update()
     {
+
+        _isJumping |= Input.GetKeyDown(KeyCode.Space);
         
     _vInput = Input.GetAxis("Vertical")*MoveSpeed;
 
@@ -47,13 +68,44 @@ public class PlayerBehaviors : MonoBehaviour
     //1
     void FixedUpdate()
     {
-        //2
+      
         Vector3 rotation = Vector3.up*_hInput;
-        //3
+        
+
+        if (_isJumping)
+        {
+            
+            _rb.AddForce(Vector3.up * JumpVelocity, ForceMode.Impulse);
+        }
+        
+        _isJumping = false;
+
         Quaternion angleRot = Quaternion.Euler(rotation*Time.fixedDeltaTime);
-        //4
+        
         _rb.MovePosition(this.transform.position + this.transform.forward* _vInput* Time.fixedDeltaTime);
-        //5
+       
         _rb.MoveRotation(_rb.rotation * angleRot);
+
+
+
+        if (IsGrounded() && _isJumping)
+        {
+            _rb.AddForce(Vector3.up * JumpVelocity,
+                ForceMode.Impulse);
+        }
+    }
+
+
+    private bool IsGrounded()
+    {
+      
+        Vector3 capsuleBottom = new Vector3(_col.bounds.center.x,
+            _col.bounds.min.y, _col.bounds.center.z);
+
+        bool grounded = Physics.CheckCapsule(_col.bounds.center,
+            capsuleBottom, DistanceToGround, GroundLayer,
+            QueryTriggerInteraction.Ignore);
+        
+        return grounded;
     }
 }

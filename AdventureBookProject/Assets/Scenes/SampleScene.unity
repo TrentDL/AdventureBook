@@ -199,7 +199,7 @@ GameObject:
   - component: {fileID: 84223334}
   - component: {fileID: 84223333}
   - component: {fileID: 84223332}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -308,7 +308,7 @@ GameObject:
   - component: {fileID: 114635575}
   - component: {fileID: 114635574}
   - component: {fileID: 114635573}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -417,7 +417,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 174113259}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Platform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -452,7 +452,7 @@ GameObject:
   - component: {fileID: 180490026}
   - component: {fileID: 180490025}
   - component: {fileID: 180490024}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -560,7 +560,7 @@ GameObject:
   - component: {fileID: 217246539}
   - component: {fileID: 217246538}
   - component: {fileID: 217246537}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Plane (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -665,6 +665,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 891644804}
     m_Modifications:
+    - target: {fileID: 587247772843945226, guid: df2bad86620bd674290f69252a94f396, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 2354671271269165633, guid: df2bad86620bd674290f69252a94f396, type: 3}
       propertyPath: m_LocalPosition.x
       value: -15
@@ -729,6 +733,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.y
       value: -30.829
       objectReference: {fileID: 0}
+    - target: {fileID: 4542014711963407205, guid: df2bad86620bd674290f69252a94f396, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 5394488342149644738, guid: df2bad86620bd674290f69252a94f396, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.56
@@ -749,9 +757,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.y
       value: 59.171
       objectReference: {fileID: 0}
+    - target: {fileID: 6721499124072574027, guid: df2bad86620bd674290f69252a94f396, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 7008257257164360647, guid: df2bad86620bd674290f69252a94f396, type: 3}
       propertyPath: m_Name
       value: Barrier (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7008257257164360647, guid: df2bad86620bd674290f69252a94f396, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7162415488491005032, guid: df2bad86620bd674290f69252a94f396, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8641978920206648082, guid: df2bad86620bd674290f69252a94f396, type: 3}
       propertyPath: m_LocalPosition.x
@@ -772,6 +792,10 @@ PrefabInstance:
     - target: {fileID: 8641978920206648082, guid: df2bad86620bd674290f69252a94f396, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 60.76
+      objectReference: {fileID: 0}
+    - target: {fileID: 8707368336083944169, guid: df2bad86620bd674290f69252a94f396, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
@@ -797,7 +821,7 @@ GameObject:
   - component: {fileID: 425030781}
   - component: {fileID: 425030780}
   - component: {fileID: 425030779}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Plane
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -947,6 +971,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 891644804}
     m_Modifications:
+    - target: {fileID: 587247772843945226, guid: df2bad86620bd674290f69252a94f396, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 2354671271269165633, guid: df2bad86620bd674290f69252a94f396, type: 3}
       propertyPath: m_LocalPosition.x
       value: -10
@@ -1011,6 +1039,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.y
       value: -30.829
       objectReference: {fileID: 0}
+    - target: {fileID: 4542014711963407205, guid: df2bad86620bd674290f69252a94f396, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 5394488342149644738, guid: df2bad86620bd674290f69252a94f396, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.56
@@ -1031,9 +1063,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.y
       value: 59.171
       objectReference: {fileID: 0}
+    - target: {fileID: 6721499124072574027, guid: df2bad86620bd674290f69252a94f396, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 7008257257164360647, guid: df2bad86620bd674290f69252a94f396, type: 3}
       propertyPath: m_Name
       value: Barrier (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7008257257164360647, guid: df2bad86620bd674290f69252a94f396, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7162415488491005032, guid: df2bad86620bd674290f69252a94f396, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8641978920206648082, guid: df2bad86620bd674290f69252a94f396, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1054,6 +1098,10 @@ PrefabInstance:
     - target: {fileID: 8641978920206648082, guid: df2bad86620bd674290f69252a94f396, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 60.76
+      objectReference: {fileID: 0}
+    - target: {fileID: 8707368336083944169, guid: df2bad86620bd674290f69252a94f396, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
@@ -1079,7 +1127,7 @@ GameObject:
   - component: {fileID: 545660671}
   - component: {fileID: 545660670}
   - component: {fileID: 545660669}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Plane (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1282,7 +1330,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 891644804}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Environment
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1554,7 +1602,7 @@ GameObject:
   - component: {fileID: 1032995977}
   - component: {fileID: 1032995976}
   - component: {fileID: 1032995975}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Plane (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1663,7 +1711,7 @@ GameObject:
   - component: {fileID: 1201244216}
   - component: {fileID: 1201244215}
   - component: {fileID: 1201244214}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1771,7 +1819,7 @@ GameObject:
   - component: {fileID: 1283624677}
   - component: {fileID: 1283624676}
   - component: {fileID: 1283624675}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1879,7 +1927,7 @@ GameObject:
   - component: {fileID: 1438339893}
   - component: {fileID: 1438339892}
   - component: {fileID: 1438339891}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2192,6 +2240,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 891644804}
     m_Modifications:
+    - target: {fileID: 587247772843945226, guid: df2bad86620bd674290f69252a94f396, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 2354671271269165633, guid: df2bad86620bd674290f69252a94f396, type: 3}
       propertyPath: m_LocalPosition.x
       value: 11
@@ -2256,6 +2308,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.y
       value: -30.829
       objectReference: {fileID: 0}
+    - target: {fileID: 4542014711963407205, guid: df2bad86620bd674290f69252a94f396, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 5394488342149644738, guid: df2bad86620bd674290f69252a94f396, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.56
@@ -2276,9 +2332,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.y
       value: 59.171
       objectReference: {fileID: 0}
+    - target: {fileID: 6721499124072574027, guid: df2bad86620bd674290f69252a94f396, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 7008257257164360647, guid: df2bad86620bd674290f69252a94f396, type: 3}
       propertyPath: m_Name
       value: Barrier (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7008257257164360647, guid: df2bad86620bd674290f69252a94f396, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7162415488491005032, guid: df2bad86620bd674290f69252a94f396, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8641978920206648082, guid: df2bad86620bd674290f69252a94f396, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2300,6 +2368,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.y
       value: 60.76
       objectReference: {fileID: 0}
+    - target: {fileID: 8707368336083944169, guid: df2bad86620bd674290f69252a94f396, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 6778228901638011583, guid: df2bad86620bd674290f69252a94f396, type: 3}
@@ -2320,6 +2392,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 891644804}
     m_Modifications:
+    - target: {fileID: 587247772843945226, guid: df2bad86620bd674290f69252a94f396, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 2354671271269165633, guid: df2bad86620bd674290f69252a94f396, type: 3}
       propertyPath: m_LocalPosition.x
       value: 15
@@ -2360,9 +2436,29 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4542014711963407205, guid: df2bad86620bd674290f69252a94f396, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6721499124072574027, guid: df2bad86620bd674290f69252a94f396, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 7008257257164360647, guid: df2bad86620bd674290f69252a94f396, type: 3}
       propertyPath: m_Name
       value: Barrier
+      objectReference: {fileID: 0}
+    - target: {fileID: 7008257257164360647, guid: df2bad86620bd674290f69252a94f396, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7162415488491005032, guid: df2bad86620bd674290f69252a94f396, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8707368336083944169, guid: df2bad86620bd674290f69252a94f396, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2377,6 +2473,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 312109543880938908, guid: f7f85a993715bfc43a7fbc0a0a97861e, type: 3}
+      propertyPath: GroundLayer.m_Bits
+      value: 64
+      objectReference: {fileID: 0}
     - target: {fileID: 1344104646236216003, guid: f7f85a993715bfc43a7fbc0a0a97861e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -2481,6 +2581,10 @@ PrefabInstance:
     - target: {fileID: 1862113715991489036, guid: 669f539f142be2843bff47675c0ed965, type: 3}
       propertyPath: m_Name
       value: Health_Pickup
+      objectReference: {fileID: 0}
+    - target: {fileID: 1862113715991489036, guid: 669f539f142be2843bff47675c0ed965, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4232314437842756721, guid: 669f539f142be2843bff47675c0ed965, type: 3}
       propertyPath: m_Radius

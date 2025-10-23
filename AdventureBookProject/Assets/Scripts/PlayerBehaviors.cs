@@ -77,15 +77,19 @@ public class PlayerBehaviors : MonoBehaviour
     {
       
         Vector3 rotation = Vector3.up*_hInput;
-        
 
-        if (_isJumping)
+        if (IsGrounded() && _isJumping)
         {
-            
             _rb.AddForce(Vector3.up * JumpVelocity, ForceMode.Impulse);
         }
         
         _isJumping = false;
+
+
+
+      
+        
+       
 
         Quaternion angleRot = Quaternion.Euler(rotation*Time.fixedDeltaTime);
         
@@ -95,12 +99,7 @@ public class PlayerBehaviors : MonoBehaviour
 
 
 
-        if (IsGrounded() && _isJumping)
-        {
-            _rb.AddForce(Vector3.up * JumpVelocity,
-                ForceMode.Impulse);
-        }
-
+        
 
         if(_isShooting)
         {

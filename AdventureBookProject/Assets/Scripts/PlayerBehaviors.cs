@@ -87,7 +87,10 @@ public class PlayerBehaviors : MonoBehaviour
 
 
 
-      
+       /*  if (_isJumping)  //commed out bcuz it creates a logic error in Grounded Code
+        {
+            _rb.AddForce(Vector3.up * JumpVelocity, ForceMode.Impulse);
+        } */
         
        
 

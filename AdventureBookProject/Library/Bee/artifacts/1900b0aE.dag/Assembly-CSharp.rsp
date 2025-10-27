@@ -404,6 +404,7 @@
 "Assets/Scripts/CameraBehavior.cs"
 "Assets/Scripts/Character.cs"
 "Assets/Scripts/EnemyBehaviors.cs"
+"Assets/Scripts/GameBehaviors.cs"
 "Assets/Scripts/ItemBehaviors.cs"
 "Assets/Scripts/ItemRotation.cs"
 "Assets/Scripts/LearningScriptsForUnity.cs"

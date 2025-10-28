@@ -39,16 +39,20 @@ public class PlayerBehaviors : MonoBehaviour
     private float _hInput;
     private Rigidbody _rb;
 
-  
+    private GameBehaviors _gameManager;
+
+
     void Start()
     {
         
         _rb = GetComponent<Rigidbody>();
 
-        //4
+        
         _col = GetComponent<CapsuleCollider>();
 
-    }
+        _gameManager = GameObject.Find("GameManager").GetComponent<GameBehaviors>();
+
+    }  //End of function >:D
   
 
     // Update is called once per frame 
@@ -71,7 +75,7 @@ public class PlayerBehaviors : MonoBehaviour
     //6
     this.transform.Rotate(Vector3.up*_hInput*Time.deltaTime);
     */
-    }
+    }  //End of function >:D
     //1
     void FixedUpdate()
     {
@@ -119,7 +123,7 @@ public class PlayerBehaviors : MonoBehaviour
         _isShooting = false;    
 
 
-    }
+    } //End of function >:D
 
 
 
@@ -135,5 +139,18 @@ public class PlayerBehaviors : MonoBehaviour
             QueryTriggerInteraction.Ignore);
         
         return grounded;
-    }
+    }  //End of function >:D
+
+
+    void OnCollisionEnter(Collision collision)
+    {
+        if(collision.gameObject.name == "Enemy")
+        {
+             _gameManager.HP -= 1;
+        }
+       
+
+
+
+    }  //End of function >:D
 }

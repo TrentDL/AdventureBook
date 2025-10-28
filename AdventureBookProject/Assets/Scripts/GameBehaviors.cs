@@ -18,7 +18,6 @@ public class GameBehaviors : MonoBehaviour
 
 
 
-    public Button WinButton;
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -28,7 +27,8 @@ public class GameBehaviors : MonoBehaviour
         HealthText.text += _playerHP;
 
 
-    }
+    } //end of function >:D
+
     private int _itemsCollected = 0;
 
 
@@ -40,7 +40,7 @@ public class GameBehaviors : MonoBehaviour
 
 
 
-    }
+    }//end of function >:D
 
 
     public int Items
@@ -70,7 +70,14 @@ public class GameBehaviors : MonoBehaviour
         }
     }//end of function >:D
 
-    private int _playerHP = 10;
+
+
+    
+    public Button WinButton;
+
+    public Button LossButton;
+
+    private int _playerHP = 1; // change player health value here!
 
     public int HP
     {
@@ -81,7 +88,22 @@ public class GameBehaviors : MonoBehaviour
             _playerHP = value;
             HealthText.text = "Health: " + HP;
             Debug.LogFormat("Lives: {0}", _playerHP);
+
+            if(_playerHP <= 0)
+            {
+                ProgressText.text= "You want another life with that?";
+                LossButton.gameObject.SetActive(true);
+                Time.timeScale = 0;
+            }
+            else
+            {
+                ProgressText.text = "Ouch... that's got hurt.";
+            }
         }
+
+        
+
+
     } //end of function >:D
 
     public void RestartScene()

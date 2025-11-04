@@ -55,12 +55,14 @@
     <Compile Include="Assets\Scripts\ItemRotation.cs" />
     <Compile Include="Assets\Scripts\ItemBehaviors.cs" />
     <Compile Include="Assets\Scripts\PlayerBehaviors.cs" />
+    <Compile Include="Assets\Scripts\IManager.cs" />
     <Compile Include="Assets\Scripts\Structs.cs" />
     <Compile Include="Assets\Scripts\Paladin.cs" />
     <Compile Include="Assets\Scripts\CameraBehavior.cs" />
     <Compile Include="Assets\Scripts\BulletBehaviors.cs" />
     <Compile Include="Assets\Scripts\GameBehaviors.cs" />
     <Compile Include="Assets\Scripts\Weapon.cs" />
+    <Compile Include="Assets\Scripts\Utilities.cs" />
     <Compile Include="Assets\Scripts\MadnessGameSelect.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -1153,12 +1155,12 @@
       <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="UnityEngine.UI">
-      <HintPath>Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="Unity.AI.Navigation.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.AI.Navigation.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.VisualScripting.SettingsProvider.Editor">

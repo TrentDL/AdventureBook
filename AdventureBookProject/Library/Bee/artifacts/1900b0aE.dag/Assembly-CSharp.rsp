@@ -419,6 +419,7 @@
 "Assets/Scripts/Character.cs"
 "Assets/Scripts/EnemyBehaviors.cs"
 "Assets/Scripts/GameBehaviors.cs"
+"Assets/Scripts/IManager.cs"
 "Assets/Scripts/ItemBehaviors.cs"
 "Assets/Scripts/ItemRotation.cs"
 "Assets/Scripts/LearningScriptsForUnity.cs"
@@ -428,6 +429,7 @@
 "Assets/Scripts/SpriteLibrary.cs"
 "Assets/Scripts/Structs.cs"
 "Assets/Scripts/TrentMusicPlayer.cs"
+"Assets/Scripts/Utilities.cs"
 "Assets/Scripts/Weapon.cs"
 -langversion:9.0
 /deterministic

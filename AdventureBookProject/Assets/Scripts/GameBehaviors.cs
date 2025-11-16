@@ -1,12 +1,19 @@
+
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
+using System.Collections.Generic;
+using System.Collections;
+using CustomInt = System.Int64; //end of ch 10 pg. 489 //PURPOSE:if we wanted to create a type alias to refer to the existing Int64 type,
 
 using UnityEngine.SceneManagement;
 
+using CustomExtensions;
 public class GameBehaviors : MonoBehaviour, IManager
 {
+    public Stack<Loot> LootStack = new Stack<Loot>();
 
+    public CustomInt PlayerHealth = 100; //end of ch 10
     private string _state;
     
     public string State
@@ -62,7 +69,7 @@ public class GameBehaviors : MonoBehaviour, IManager
         }
     }//end of function >:D
 
-    public int MaxItems = 4;
+    public int MaxItems = 4; //change how many items needed to win, also in inspector for GameManager object
 
     public TMP_Text HealthText;
     public TMP_Text ItemText;
@@ -139,10 +146,27 @@ public class GameBehaviors : MonoBehaviour, IManager
 
     public void Initialize()
     {
+
         _state = "Game Manager initialized..";
         Debug.Log(_state);
 
-    } //end of function >:D
+        _state.FancyDebug();
+        Debug.Log(_state);
 
+        LootStack.Push(new Loot("Sword of Doom", 5));
+        LootStack.Push(new Loot("HP Boost", 1));
+        LootStack.Push(new Loot("Golden Key", 3));
+        LootStack.Push(new Loot("Pair of Winged Boots", 2));
+        LootStack.Push(new Loot("Mythril Bracer", 4));
+
+
+    } //end of function >:D
+    
+
+    public void PrintLootReport()
+    {
+        Debug.LogFormat("There are {0} random loot items waiting for you!", LootStack.Count);
+
+    }//end of function >:D
 
 }

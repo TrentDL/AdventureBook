@@ -2538,7 +2538,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8733d59f09c4894438df5f6357817cb6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MaxItems: 1
+  PlayerHealth: 100
+  MaxItems: 5
   HealthText: {fileID: 1344546511}
   ItemText: {fileID: 358482751}
   ProgressText: {fileID: 1599741075}
@@ -2789,7 +2790,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: -39.87037, z: 0, w: 12.861404}
+  m_margin: {x: 62.435623, y: -39.87037, z: 64.0697, w: 12.861404}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0

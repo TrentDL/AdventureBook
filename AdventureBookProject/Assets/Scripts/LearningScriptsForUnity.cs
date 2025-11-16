@@ -13,7 +13,7 @@ public class LearningScriptsForUnity : MonoBehaviour
     public float Pi = 3.14f; //ch.3 code
     public bool CanRun = true; //ch.3 code
     public int MaximumPlayerHealth = 100;
-    string FullName = "Harryson" + "Ferrone"; //ch.3 code
+    string FullName = "Trent" + "Landsbegrer"; //ch.3 code
     public int CurrentGold = 32; //ch4.
     public bool HasDungeonKey = false;
     public string WeaponType = "R orb"; //Other names for testing: magic marker, R Orb, Binary Stick, ChezKoff, GECK // ch4

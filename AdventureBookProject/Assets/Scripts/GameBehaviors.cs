@@ -1,6 +1,7 @@
 
 using UnityEngine;
 using TMPro;
+using System.Linq;
 using UnityEngine.UI;
 using System.Collections.Generic;
 using System.Collections;
@@ -159,6 +160,7 @@ public class GameBehaviors : MonoBehaviour, IManager
         LootStack.Push(new Loot("Pair of Winged Boots", 2));
         LootStack.Push(new Loot("Mythril Bracer", 4));
 
+        FilterLoot();
 
     } //end of function >:D
     
@@ -173,4 +175,28 @@ public class GameBehaviors : MonoBehaviour, IManager
 
     }//end of function >:D
 
+    public void FilterLoot()
+    {
+        var rareLoot = LootStack
+        .Where(item => item.Rarity >= 3)
+        .OrderBy(item => item.Rarity)
+        .Select(item => new
+        {
+            item.Name
+        });
+
+        foreach (var item in rareLoot)
+        {
+            Debug.LogFormat("Rare item: {0}!", item.Name);
+        }
+
+
+    }//end of function >:D
+
+    public bool LootPredicate(Loot loot)
+    {
+        return loot.Rarity >= 3;
+
+
+    } //end of function >:D
 }

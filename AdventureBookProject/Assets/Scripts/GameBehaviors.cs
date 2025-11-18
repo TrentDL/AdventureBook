@@ -13,7 +13,7 @@ public class GameBehaviors : MonoBehaviour, IManager
 {
     public Stack<Loot> LootStack = new Stack<Loot>();
 
-    public CustomInt PlayerHealth = 100; //end of ch 10
+    public CustomInt PlayerHealth = 100; //near end of ch 10
     private string _state;
     
     public string State
@@ -165,6 +165,10 @@ public class GameBehaviors : MonoBehaviour, IManager
 
     public void PrintLootReport()
     {
+        
+        var currentItem = LootStack.Pop();
+        var nextItem = LootStack.Peek();
+        Debug.LogFormat("You got a {0}! You've got a good chance of finding a {1} next!", currentItem.Name, nextItem.Name);
         Debug.LogFormat("There are {0} random loot items waiting for you!", LootStack.Count);
 
     }//end of function >:D

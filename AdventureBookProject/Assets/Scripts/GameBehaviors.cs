@@ -177,14 +177,11 @@ public class GameBehaviors : MonoBehaviour, IManager
 
     public void FilterLoot()
     {
-        var rareLoot = LootStack
-        .Where(item => item.Rarity >= 3)
-        .OrderBy(item => item.Rarity)
-        .Select(item => new
-        {
-            item.Name
-        });
-
+        var rareLoot = (from item in LootStack //Ch11 <--- this is the rareLoot query here!
+        where item.Rarity >= 3
+        orderby item.Rarity   
+        select new { item.Name })
+        .Skip(1);
         foreach (var item in rareLoot)
         {
             Debug.LogFormat("Rare item: {0}!", item.Name);
